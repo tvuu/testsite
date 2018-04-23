@@ -7,9 +7,28 @@
   height: 80px;
 }
 
+.Cat-logo {
+  animation: App-logo-spin infinite 1s linear;
+  height: 80px;
+}
+
 .App-header {
   background-color: #222;
+  height: 100px;
+  padding: 20px;
+  color: white;
+}
+
+.Cat-header {
+  background-color: #222;
   height: 150px;
+  padding: 20px;
+  color: black;
+}
+
+.Video-header {
+  background-color: #fff;
+  height: 600px;
   padding: 20px;
   color: white;
 }
@@ -25,4 +44,49 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+a.button{
+  background:#b5e853;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+
+a.button:hover{
+  background:#666;
+  color:#b5e853;
+}
+
+a.button:before,a.button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #00b715;
+  transition:400ms ease all;
+}
+
+a.button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+
+a.button:hover:before,a.button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+ul.posts li {
+    list-style: none;
 }
